@@ -101,7 +101,7 @@ if ((Test-Connection -ComputerName $NetBios -quiet) -eq 'Success') {
 
 # Read-Host -Prompt "Passwort fuer Benutzer administrator@XXX eingeben." -AsSecureString | ConvertFrom-SecureString | Out-File "\\Path\to\Admin_PW.txt"
 
-$AdminName = "administrator@borg3" 
+$AdminName = "administrator@xxx" 
 $Pass = Get-Content "\\Path\to\Admin_PW.txt" | ConvertTo-SecureString
 $Cred = new-object -typename System.Management.Automation.PSCredential -argumentlist $AdminName, $Pass
 
